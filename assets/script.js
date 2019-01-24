@@ -15,6 +15,19 @@ const catArray = [
     "14.gif"
 ];
 
-const path = "/assets/gifs/";
+const path = "assets/gifs/";
 const catDiv = document.querySelector(".cat");
+
+function randomCat() {
+    for (let i = 0; i < 13; i++) {
+         random = catArray[Math.floor(Math.random() * catArray.length)];
+    }
+
+    const image = new Image();
+    image.src = path + random;
+    image.alt = "Cat Knocking Stuff Over"
+    catDiv.appendChild(image);
+}
+
+randomCat();
 
