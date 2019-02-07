@@ -25,7 +25,7 @@ function randomCat() {
 
     const image = new Image();
     image.src = path + random;
-    image.alt = "Cat Knocking Stuff Over"
+    image.alt = "Cat Testing Gravity"
     catDiv.appendChild(image);
 }
 
